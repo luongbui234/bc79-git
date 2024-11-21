@@ -1,6 +1,4 @@
-
-
-
+--- Đẩy code từ local lên remote ---
 
 +repository local : source code trong máy tính
 
