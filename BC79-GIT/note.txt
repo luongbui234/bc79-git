@@ -27,3 +27,13 @@ git push -u origin [tên nhánh hiện tại] ( cho lần đầu tiên git push 
 git add -A
 git commit -m " create home page html "
 git push
+
+
+
+
+
+
+
+
+
+git 
