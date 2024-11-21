@@ -5,10 +5,10 @@
 +repository remote : source lưu trên github
 - liên kết vscode và github
 git config --global user.name "Your name"
+git config --global user.email "Your@email.com"
 
-
-
-
+- liên kết giữa repo local và repo remote
+git remote add origin url-repo
 
 
 
