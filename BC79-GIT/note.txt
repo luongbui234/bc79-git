@@ -46,3 +46,15 @@ git checkout -b [tên nhánh]
 
 git checkout [tên nhánh]
 
+
+
+
+-- Xem các nhánh đang có trong máy
+git branch
+
+
+--- Gom code từ 2 login về master ( đứng tại nhánh master )
+
+git merge login
+-- Tạo nhánh
+git checkout -b [tên nhánh]
