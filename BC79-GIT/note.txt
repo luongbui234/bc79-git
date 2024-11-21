@@ -34,6 +34,6 @@ git push
 
 
 
+--- Gom code từ 2 login về master ( đứng tại nhánh master )
 
-
-git 
+git merge login
