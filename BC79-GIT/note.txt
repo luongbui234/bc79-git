@@ -1,0 +1,32 @@
+
+
+
+
++repository local : source code trong máy tính
+
++repository remote : source lưu trên github
+
+- liên kết vscode và github
+git config --global user.name "Your name"
+
+
+
+
+
+
+
+
+
+
+
+-- Đẩy lần đầu ( trên github chưa có nhánh master)
+git add -A
+git commit -m " create home page html "
+git push -u origin [tên nhánh hiện tại]
+
+
+
+-- Đẩy lần 2 trở đi
+git add -A
+git commit -m " create home page html "
+git push
