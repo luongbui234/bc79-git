@@ -1,0 +1,15 @@
+* {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.lb_b1 {
+    width: 200px;
+    display: inline-block;
+}
+
+/* .btn_b1 {
+    margin: 10px 0;
+} */
