@@ -21,19 +21,3 @@ document.getElementById("b5").onclick = function () {
 };
 
 // end link iframe
-
-// start b1
-
-document.getElementById("btn_b1").onclick = function () {
-
-let inputElement = document.getElementById("ip_b1");
-let inputValue = inputElement.value;
-
-console.log(inputValue);
-  
-  // let p = document.getElementById("ip_b1").get;
-  // console.log(p);
-  // document.getElementById("lb_b1").innerHTML = document.getElementById("ip_b1").value * 100.000;
-};
-
-// end b1

@@ -5,11 +5,10 @@
     font-size: 30px;
 }
 
-.lb_b1 {
-    width: 200px;
-    display: inline-block;
-}
-
-/* .btn_b1 {
+#btn_b1,
+#btn_b2,
+#btn_b3,
+#btn_b4,
+#btn_b5 {
     margin: 10px 0;
-} */
+}
