@@ -1,0 +1,13 @@
+* {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+#btn_b1,
+#btn_b2,
+#btn_b3,
+#btn_b4 {
+    margin: 10px 0;
+}
