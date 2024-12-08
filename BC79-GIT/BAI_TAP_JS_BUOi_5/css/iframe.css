@@ -17,3 +17,17 @@ select {
     width: 32%;
     margin-bottom: 10px;
 }
+
+p span {
+    color: red;
+}
+
+table,
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#ip_npt {
+    width: 38%;
+}
