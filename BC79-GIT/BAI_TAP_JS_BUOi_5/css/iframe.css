@@ -11,3 +11,9 @@
 #btn_b4 {
     margin: 10px 0;
 }
+
+input,
+select {
+    width: 32%;
+    margin-bottom: 10px;
+}
