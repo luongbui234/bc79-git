@@ -23,11 +23,11 @@ p span {
 }
 
 table,
-td {
+th, td {
     border-collapse: collapse;
     border: 1px solid black;
 }
 
-#ip_npt {
+#ip_npt_b3 {
     width: 38%;
 }
