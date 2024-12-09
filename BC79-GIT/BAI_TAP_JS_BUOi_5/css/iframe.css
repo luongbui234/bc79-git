@@ -31,3 +31,16 @@ th, td {
 #ip_npt_b3 {
     width: 38%;
 }
+
+#p_b4,
+#ul_b4 {
+    margin: 0;
+}
+
+li {
+    margin-left: 8%;
+}
+
+#ip_kn_b4 {
+    /* display: none; */
+}
