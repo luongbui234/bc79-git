@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BÀI TẬP JS BUỔI 7-8</title>
+
+    <!-- link gg font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <section>
+      <!-- Than dieu huong -->
+      <div class="div_1">
+        <div class="list_item_1">
+          <div class="item_bg"></div>
+          <div class="item_text">JS</div>
+        </div>
+        <div class="list_item_2">
+          <i class="fa fa-minus"></i>
+          <i class="fa fa-square"></i>
+          <i class="fa fa-times"></i>
+        </div>
+      </div>
+
+      <!-- content -->
+       <div class="bg_color">
+
+       
+      <div class="ip_btn_lb_n">
+      <div class="ip_btn">
+        <input id="ip" class="ip_index" type="number" placeholder="Nhập số N"/>
+        <button id="btn" class="btn_index" onclick="themSo()">Thêm số</button>
+      </div>
+      <div class="lb_n">
+        <i class="fa fa-hand-point-right"></i>
+        <label id="lb"></label>
+      </div>
+    </div>
+    <div class="list_item">
+      <div class="item_0">
+        <div class="item">
+          <p>1</p>
+          <button class="btn_item" onclick="item_b1()"><<</button>
+        </div>
+        <div class="item">
+          <p>2</p>
+          <button class="btn_item" onclick="item_b2()"><<</button>
+        </div>
+        <div class="item">
+          <p>3</p>
+          <button class="btn_item" onclick="item_b3()"><<</button>
+        </div>
+        <div class="item">
+          <p>4</p>
+          <button class="btn_item" onclick="item_b4()"><<</button>
+        </div>
+        <div class="item">
+          <p>5</p>
+          <button class="btn_item" onclick="item_b5()"><<</button>
+        </div>
+        <div class="item">
+          <p>6</p>
+          <button class="btn_item" onclick="item_b6()"><<</button>
+        </div>
+        <div class="item">
+          <p>7</p>
+          <button class="btn_item" onclick="item_b7()"><<</button>
+        </div>
+        <div class="item">
+          <p>8</p>
+          <button class="btn_item" onclick="item_b8()"><<</button>
+        </div>
+        <div class="item">
+          <p>9</p>
+          <button class="btn_item" onclick="item_b9()"><<</button>
+        </div>
+        <div class="item">
+          <p>10</p>
+          <button class="btn_item" onclick="item_b10()"><<</button>
+        </div>
+      </div>
+
+      <!-- Bai 1 -->
+      <div id="b1" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Tổng số dương</h1>
+          <label id="lb_b1">Kết quả: </label><br />
+          <button id="btn_b1" class="btn_index" onclick="b1()">Tính tổng</button>
+        </div>
+      </div>
+
+      <!-- Bai 2 -->
+      <div id="b2" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Đếm số dương</h1>
+          <label id="lb_b2">Kết quả: </label><br />
+          <button id="btn_b2" class="btn_index" onclick="b2()">Đếm số</button>
+        </div>
+      </div>
+
+      <!-- Bai 3 -->
+      <div id="b3" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Tìm số nhỏ nhất</h1>
+          <label id="lb_b3">Kết quả: </label><br />
+          <button id="btn_b3" class="btn_index" onclick="b3()">Tìm số nhỏ nhất</button>
+        </div>
+      </div>
+
+      <!-- Bai 4 -->
+      <div id="b4" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Tìm số dương nhỏ nhất</h1>
+          <label id="lb_b4">Kết quả: </label><br />
+          <button id="btn_b4" class="btn_index" onclick="b4()">Tìm số dương nhỏ nhất</button>
+        </div>
+      </div>
+
+      <!-- Bai 5 -->
+      <div id="b5" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Tìm số chẵn cuối cùng</h1>
+          <label id="lb_b5">Kết quả: </label><br />
+          <button id="btn_b5" class="btn_index" onclick="b5()">Tìm số chẵn cuối cùng</button>
+        </div>
+      </div>
+
+      <!-- Bai 6 -->
+      <div id="b6" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Đổi chỗ</h1>
+          <input id="ip_vt_1" class="ip_index" type="number" placeholder="Nhập số vị trí 1">
+          <input id="ip_vt_2" class="ip_index" type="number" placeholder="Nhập số vị trí 2">
+          <br><br><label id="lb_b6">Kết quả: </label><br />
+          <button id="btn_b6" class="btn_index" onclick="b6()">Đổi chỗ</button>
+        </div>
+      </div>
+
+      <!-- Bai 7 -->
+      <div id="b7" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Sắp xếp tăng dần</h1>
+          <label id="lb_b7">Kết quả: </label><br />
+          <button id="btn_b7" class="btn_index" onclick="b7()">Sắp xếp</button>
+        </div>
+      </div>
+
+      <!-- Bai 8 -->
+      <div id="b8" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Tìm số nguyên tố đầu tiên</h1>
+          <label id="lb_b8">Kết quả: </label><br />
+          <button id="btn_b8" class="btn_index" onclick="b8()">Tìm số nguyên tố</button>
+        </div>
+      </div>
+
+      <!-- Bai 9 -->
+      <div id="b9" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>Đếm số nguyên</h1>
+          <div class="ip_btn_lb_n">
+            <div class="ip_btn">
+            <input id="ip_moi" class="ip_index" type="number" placeholder="Nhập số"/>
+            <button id="btn" class="btn_index" onclick="themSoMoi()">Thêm số</button>
+            </div>
+            <div class="lb_n">
+              <i class="fa fa-hand-point-right"></i>
+              <label id="lb_moi"></label>
+            </div>
+          </div>
+          <br><label id="lb_b9">Kết quả: </label><br />
+          <button id="btn_b9" class="btn_index" onclick="b9()">Đếm số nguyên</button>
+        </div>
+      </div>
+
+      <!-- Bai 10 -->
+      <div id="b10" class="item_1">
+        <button id="btn_close" onclick="btn_close()">>></button>
+        <div class="item_content">
+          <h1>So sánh số lượng âm và dương</h1>
+          <label id="lb_b10">Kết quả: </label><br />
+          <button id="btn_b10" class="btn_index" onclick="b10()">So sánh</button>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
