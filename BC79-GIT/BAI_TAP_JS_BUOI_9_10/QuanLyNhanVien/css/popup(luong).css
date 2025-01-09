@@ -1,0 +1,43 @@
+/* start popup (luong) */
+
+.popup_cap_nhat {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    width: 500px;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.cap_nhat_tk,
+.cap_nhat_ht,
+.cap_nhat_email,
+.cap_nhat_pass_word,
+.cap_nhat_ngay_lam,
+.cap_nhat_luong_co_ban,
+.cap_nhat_chuc_vu,
+.cap_nhat_gio_lam {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer_popup {
+    margin: 5% 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+/* end popup (luong)  */
