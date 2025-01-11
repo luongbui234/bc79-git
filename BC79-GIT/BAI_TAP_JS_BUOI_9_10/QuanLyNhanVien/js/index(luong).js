@@ -1,19 +1,4 @@
-let dt1 = {
-  // id: 0,
-  tkNV: "luongbui",
-  name: "luong",
-  email: "luongbui0610@gmail.com",
-  password: "123456",
-  datepicker: "11/01/2025",
-  luongCB: 5000000,
-  chucvu: "Sếp",
-  giolam: 100,
-  tongluong: 0,
-  loaiNV: "",
-};
-
-// let nextId = 0;
-let DSNV = [dt1];
+let DSNV = [];
 
 let themNV = () => {
   let nv = layThongTinTuForm();
