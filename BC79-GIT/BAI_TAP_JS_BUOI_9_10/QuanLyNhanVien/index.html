@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <!-- popup(luong) -->
-    <!-- <link rel="stylesheet" href="./css/popup(luong).css" /> -->
+    <link rel="stylesheet" href="./css/popup(luong).css" />
   </head>
 
   <body>
@@ -392,7 +392,7 @@
     </div>
 
     <!-- popup (luong) -->
-    <!-- <div class="popup_cap_nhat" id="popup_cap_nhat">
+    <div class="popup_cap_nhat" id="popup_cap_nhat">
       <div class="header_popup">
         <h1>Cập Nhật Nhân Viên</h1>
         <div class="cap_nhat_tk">
@@ -400,7 +400,7 @@
             <i class="fa fa-user"></i>
           </div>
           <div class="ip">
-            <input type="text" placeholder="Tài khoản" />
+            <input id="popup_tkNV" type="text" placeholder="Tài khoản" />
           </div>
         </div>
         <div class="cap_nhat_ht">
@@ -408,7 +408,7 @@
             <i class="fa fa-address-book"></i>
           </div>
           <div class="ip">
-            <input type="text" placeholder="Họ và tên" />
+            <input id="popup_name" type="text" placeholder="Họ và tên" />
           </div>
         </div>
         <div class="cap_nhat_email">
@@ -416,7 +416,7 @@
             <i class="fa fa-envelope"></i>
           </div>
           <div class="ip">
-            <input type="text" placeholder="Email" />
+            <input id="popup_email" type="text" placeholder="Email" />
           </div>
         </div>
         <div class="cap_nhat_pass_word">
@@ -424,7 +424,7 @@
             <i class="fa fa-key"></i>
           </div>
           <div class="ip">
-            <input type="text" placeholder="Tài khoản" />
+            <input id="popup_pass_word" type="text" placeholder="Mật khẩu" />
           </div>
         </div>
         <div class="cap_nhat_ngay_lam">
@@ -432,7 +432,7 @@
             <i class="fa fa-calendar"></i>
           </div>
           <div class="ip">
-            <input type="text" placeholder="Tài khoản" />
+            <input id="popup_ngay_lam" type="text" placeholder="Ngày làm" />
           </div>
         </div>
         <div class="cap_nhat_luong_co_ban">
@@ -440,7 +440,7 @@
             <i class="fa fa-money"></i>
           </div>
           <div class="ip">
-            <input type="text" placeholder="Tài khoản" />
+            <input id="popup_luong_co_ban" type="text" placeholder="Lương cơ bản" />
           </div>
         </div>
         <div class="cap_nhat_chuc_vu">
@@ -448,7 +448,7 @@
             <i class="fa fa-briefcase"></i>
           </div>
           <div class="ip">
-            <select>
+            <select id="popup_chuc_vu">
               <option>Chọn chức vụ</option>
               <option>Sếp</option>
               <option>Trưởng phòng</option>
@@ -461,24 +461,24 @@
             <i class="fa fa-clock-o"></i>
           </div>
           <div class="ip">
-            <input type="text" placeholder="Tài khoản" />
+            <input id="popup_gio_lam" type="text" placeholder="Giờ làm" />
           </div>
         </div>
       </div>
       <div class="footer_popup">
-        <button type="button" class="btn btn-success">Cập nhật</button>
+        <button type="button" class="btn btn-success" onclick="capnhatNV()">Cập nhật</button>
         <button type="button" class="btn btn-danger" onclick="dongcapnhatNV()">Đóng</button>
       </div>
-    </div> -->
+    </div>
 
     <!-- scripts model.js (luong) -->
-    <script src="./js/model.js"></script>
+    <script src="./js/model(luong).js"></script>
 
     <!-- scripts controller (luong) -->
-    <script src="./js/controller.js"></script>
+    <script src="./js/controller(luong).js"></script>
 
     <!-- scripts index (luong) -->
-    <script src="./js/index.js"></script>
+    <script src="./js/index(luong).js"></script>
 
     <!-- Bootstrap -->
     <script src="js/jquery.min.js"></script>

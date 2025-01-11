@@ -24,18 +24,19 @@ let layThongTinTuForm = () => {
     tongluong;
   }
 
-  let loainhanvien = "Trung bình";
+  let loaiNV = "Trung bình";
   if (giolam >= 192) {
-    loainhanvien = "Xuất sắc";
+    loaiNV = "Xuất sắc";
   } else if (giolam >= 176) {
-    loainhanvien = "Giỏi";
+    loaiNV = "Giỏi";
   } else if (giolam >= 160) {
-    loainhanvien = "Khá";
+    loaiNV = "Khá";
   } else {
-    loainhanvien;
+    loaiNV;
   }
 
   let nhanVien = new NhanVien(
+    // nextId++,
     tkNV,
     name,
     email,
@@ -45,7 +46,7 @@ let layThongTinTuForm = () => {
     chucvu,
     giolam,
     tongluong,
-    loainhanvien
+    loaiNV
   );
   return nhanVien;
 };
@@ -54,19 +55,19 @@ const renderDSNV = (DSNV) => {
   let contentHtml = "";
 
   for (let i = 0; i < DSNV.length; i++) {
-    let nhanVien = DSNV[i];
+    let nV = DSNV[i];
 
     let tr = ` <tr>
-                <td>${nhanVien.tkNV}</td>
-                <td>${nhanVien.name}</td>
-                <td>${nhanVien.email}</td>
-                <td>${nhanVien.datepicker}</td>
-                <td>${nhanVien.chucvu}</td>
-                <td>${formatter.format(nhanVien.tongluong)}</td>
-                <td>${nhanVien.loainhanvien}</td>
+                <td>${nV.tkNV}</td>
+                <td>${nV.name}</td>
+                <td>${nV.email}</td>
+                <td>${nV.datepicker}</td>
+                <td>${nV.chucvu}</td>
+                <td>${formatter.format(nV.tongluong)}</td>
+                <td>${nV.loaiNV}</td>
                 <td>
-                <button id="btnCapNhat" type="button" class="btn btn-success" onclick="capnhatNV()">Cập nhật</button>
-                <button id="btnXoa" type="button" class="btn btn-danger" onclick="xoaNV()">Xóa</button>
+                <button id="btnCapNhat" type="button" class="btn btn-success" onclick="mocapnhatNV(${i})">Cập nhật</button>
+                <button id="btnXoa" type="button" class="btn btn-danger" onclick="xoaNV(${i})">Xóa</button>
                 </td>
               </tr>`;
     contentHtml += tr;
@@ -74,15 +75,3 @@ const renderDSNV = (DSNV) => {
 
   document.getElementById("tableDanhSach").innerHTML = contentHtml;
 };
-
-// validation
-
-// const showDataForm = (sv) => {
-//   document.getElementById("txtMaSV").value = sv.maSV;
-//   document.getElementById("txtTenSV").value = sv.hoTen;
-//   document.getElementById("txtEmail").value = sv.email;
-//   document.getElementById("txtPass").value = sv.matKhau;
-//   document.getElementById("txtDiemToan").value = sv.diemToan;
-//   document.getElementById("txtDiemLy").value = sv.diemLy;
-//   document.getElementById("txtDiemHoa").value = sv.diemHoa;
-// };

@@ -1,5 +1,6 @@
 class NhanVien {
   constructor(
+    // _id,
     _tkNV,
     _name,
     _email,
@@ -9,8 +10,9 @@ class NhanVien {
     _chucvu,
     _giolam,
     _tongluong,
-    _loainhanvien
+    _loaiNV
   ) {
+    // this.id = _id;
     this.tkNV = _tkNV;
     this.name = _name;
     this.email = _email;
@@ -20,6 +22,6 @@ class NhanVien {
     this.chucvu = _chucvu;
     this.giolam = _giolam;
     this.tongluong = _tongluong;
-    this.loainhanvien = _loainhanvien;
+    this.loaiNV = _loaiNV;
   }
 }
